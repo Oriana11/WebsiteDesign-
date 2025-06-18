@@ -15,7 +15,6 @@ This project is a responsive, multi-page website for a fashion design service. I
 - **Typography:** Uses [Inter](https://fonts.google.com/specimen/Inter) for a modern, readable feel. Headings are bold and large, while body text is light and easy to scan.
 - **Visual Hierarchy:** Large hero banners, clear section headings, and card-based layouts guide users naturally through the content.
 
-- 
 ## 📷 Screenshots
 ![chrome_rw1WpQHidq](https://github.com/user-attachments/assets/5e4fd4c5-ef8b-4e6b-8f7c-e6fb91ceb674)
 ![chrome_cOuhLGQ5LZ](https://github.com/user-attachments/assets/9ac354bd-1abb-460c-adbc-f2fc9573c97a)
