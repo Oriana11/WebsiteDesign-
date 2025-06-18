@@ -1,0 +1,124 @@
+/* Support Page Specific Styles */
+
+.support-section {
+    padding: 120px 0 80px;
+}
+
+.support-header {
+    margin-bottom: 60px;
+    padding: 8rem 0 4rem;
+    background: linear-gradient(to right, var(--primary-dark), #333);
+    color: var(--primary-light);
+}
+
+.faq-section {
+    padding: 60px 0;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    padding: 1.5rem;
+    font-weight: 500;
+    background: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.faq-answer {
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-card {
+    padding: 40px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    padding: 4rem 0;
+}
+
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.form-control {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-dark);
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.1);
+}
+
+.contact-form .form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.contact-info {
+    padding: 30px;
+}
+
+.support-card {
+    padding: 2rem;
+    border-radius: 12px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.support-channels {
+    margin-top: 40px;
+}
+
+.channel-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+}

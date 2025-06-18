@@ -1,0 +1,234 @@
+/* Start Design Page Specific Styles */
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+    z-index: 2;
+}
+
+.hero-banner .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    animation: heroZoom 20s infinite alternate ease-in-out;
+    filter: grayscale(0.3) contrast(1.1);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: var(--primary-light);
+    padding: 0;
+    width: 100%;
+}
+
+/* Hero Typography */
+.hero-title {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.hero-cta {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+/* Hero Button */
+.hero-btn {
+    padding: 1.25rem 3.5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: transparent;
+    color: var(--primary-light);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-btn::before,
+.hero-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border: 2px solid var(--primary-light);
+    top: 0;
+    left: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-btn::before {
+    transform: translate(-4px, -4px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+}
+
+.hero-btn::after {
+    transform: translate(4px, 4px);
+}
+
+.hero-btn:hover {
+    transform: translate(4px, 4px);
+    color: var(--primary-light);
+}
+
+.hero-btn:hover::before {
+    transform: translate(-8px, -8px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.hero-btn:hover::after {
+    transform: translate(0, 0);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out 1s forwards;
+}
+
+.scroll-indicator span {
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    position: relative;
+}
+
+.scroll-indicator span::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: var(--primary-light);
+    margin-left: -3px;
+    border-radius: 50%;
+    animation: scrollIndicator 2s infinite;
+}
+
+/* Options Section */
+#options {
+    position: relative;
+    background: #fff;
+    padding: 8rem 0;
+}
+
+.option-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.option-card .card-body {
+    padding: 3rem;
+}
+
+.option-card h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+/* Animations */
+@keyframes heroZoom {
+    0% { transform: scale(1.1) translate(0, 0); }
+    100% { transform: scale(1.2) translate(-2%, -1%); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scrollIndicator {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-description {
+        font-size: 1.25rem;
+    }
+    
+    .hero-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .option-card .card-body {
+        padding: 2rem;
+    }
+}

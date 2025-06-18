@@ -1,0 +1,54 @@
+/* Patterns Page Specific Styles */
+
+.patterns-header {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(45deg, var(--primary-dark), #333);
+    color: var(--primary-light);
+}
+
+.pattern-card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.pattern-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.pattern-card img {
+    transition: all 0.3s ease;
+}
+
+.pattern-card:hover img {
+    transform: scale(1.05);
+}
+
+.pattern-categories {
+    padding: 4rem 0;
+}
+
+.category-filter {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--primary-dark);
+    border-radius: 25px;
+    background: transparent;
+    color: var(--primary-dark);
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-dark);
+    color: var(--primary-light);
+}
