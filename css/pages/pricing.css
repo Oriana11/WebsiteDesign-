@@ -1,0 +1,65 @@
+/* Pricing Page Specific Styles */
+
+.pricing-header {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--primary-dark), #222);
+    color: var(--primary-light);
+}
+
+.pricing-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    border: 2px solid var(--primary-dark);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.price-value {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--primary-dark);
+}
+
+.price-period {
+    font-size: 1rem;
+    color: #666;
+}
+
+.feature-list {
+    margin: 2rem 0;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    color: #555;
+}
+
+.feature-list li.included {
+    color: var(--primary-dark);
+}
+
+.pricing-cta {
+    margin-top: 2rem;
+}
+
+.compare-features {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.feature-comparison {
+    margin-top: 3rem;
+}

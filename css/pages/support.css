@@ -1,0 +1,61 @@
+/* Support Page Specific Styles */
+
+.support-header {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(to right, var(--primary-dark), #333);
+    color: var(--primary-light);
+}
+
+.faq-section {
+    padding: 4rem 0;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    padding: 1.5rem;
+    font-weight: 500;
+    background: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    padding: 4rem 0;
+}
+
+.form-control {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-dark);
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.1);
+}
+
+.support-card {
+    padding: 2rem;
+    border-radius: 12px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
