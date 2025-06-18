@@ -4,9 +4,7 @@ A modern, minimalist web platform empowering fashion enthusiasts to bring their 
 
 ## ✨ Overview
 
-
-https://github.com/user-attachments/assets/8378057d-15d7-461b-b816-170fd4cf7555
-
+https://github.com/user-attachments/assets/06f6b00c-cbbd-4d2a-af7c-c228f05e0181
 
 This project is a responsive, multi-page website for a fashion design service. It enables users to start new designs, browse professional patterns, view a community gallery, manage their accounts, and access support—all within a clean, elegant UI.
 
