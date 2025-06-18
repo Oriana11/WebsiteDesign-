@@ -13,6 +13,7 @@ body {
     transition: all 0.3s ease;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--primary-light) !important;
+    padding: 0.75rem 0;
 }
 
 .nav-link {
@@ -53,7 +54,7 @@ body {
 }
 
 #header {
-    padding-top: 120px;
+    padding-top: 100px; /* Adjusted to a more balanced spacing */
 }
 
 #header img {
@@ -64,12 +65,112 @@ body {
     transform: scale(1.02);
 }
 
+#service-info {
+    padding: 4rem 0;
+    background-color: var(--primary-light);
+    position: relative;
+}
+
+#service-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.feature-box {
+    padding: 2.5rem 3rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-light);
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    font-size: 4.5rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.07);
+    line-height: 1;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    margin: 0;
+    z-index: 0;
+}
+
+.feature-box h3 {
+    margin: 0;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+    padding-right: 3rem;
+}
+
+.feature-box p {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    padding-right: 2rem;
+}
+
+#service-info .container {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    padding: 4rem 0 3rem;
+}
+
+footer h5 {
+    color: var(--primary-light);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+footer .nav-link:hover {
+    color: var(--primary-light) !important;
+    opacity: 1;
+}
+
+footer .nav-link::after {
+    display: none;
+}
+
+.footer-bottom {
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 @media (min-width: 992px) {
     .navbar {
-        padding: 1rem 0;
+        padding: 0.75rem 0;
     }
     
     #header {
-        padding-top: 150px;
+        padding-top: 120px; /* More balanced spacing for larger screens */
     }
 }
