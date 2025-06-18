@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Account - Design Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Elegant minimalist navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../img/logo.png" alt="Design Website Logo" class="img-fluid" style="height: 70px; width: auto;">
+            </a>
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon opacity-75"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a href="start-design.html" class="nav-link px-4 py-2 text-uppercase fw-medium">Start Design</a></li>
+                    <li class="nav-item"><a href="patterns.html" class="nav-link px-4 py-2 text-uppercase fw-medium">Patterns</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link px-4 py-2 text-uppercase fw-medium">Gallery</a></li>
+                    <li class="nav-item"><a href="pricing.html" class="nav-link px-4 py-2 text-uppercase fw-medium">Pricing</a></li>
+                    <li class="nav-item"><a href="support.html" class="nav-link px-4 py-2 text-uppercase fw-medium">Support</a></li>
+                    <li class="nav-item"><a href="account.html" class="nav-link px-4 py-2 text-uppercase fw-medium active">My Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Account Content -->
+    <section id="account" class="mt-5 pt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 mb-4">My Account</h1>
+                    <p class="lead mb-5">Manage your account settings and view your designs.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3>Profile Information</h3>
+                            <form class="mt-4">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" value="user123" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" value="user@example.com">
+                                </div>
+                                <button type="submit" class="btn btn-dark">Update Profile</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3>My Designs</h3>
+                            <div class="table-responsive mt-4">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Design Name</th>
+                                            <th>Created Date</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Summer Dress</td>
+                                            <td>2025-06-15</td>
+                                            <td><span class="badge bg-success">Complete</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-dark">Edit</button>
+                                                <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Casual Shirt</td>
+                                            <td>2025-06-10</td>
+                                            <td><span class="badge bg-warning text-dark">Draft</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-dark">Edit</button>
+                                                <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5>About Us</h5>
+                    <p class="about-text">We empower fashion enthusiasts to bring their design visions to life through custom patterns and expert guidance.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#who" class="nav-link">Who We Are</a></li>
+                        <li class="nav-item"><a href="#work" class="nav-link">How It Works</a></li>
+                        <li class="nav-item"><a href="#why" class="nav-link">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5>Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Custom Designs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pattern Making</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Size Customization</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contact</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#contact" class="nav-link">Get in Touch</a></li>
+                        <li class="nav-item"><a href="#social" class="nav-link">Social Media</a></li>
+                        <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2025 Design Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

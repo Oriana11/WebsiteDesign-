@@ -196,3 +196,410 @@ footer .about-text {
     font-weight: 600;
     position: relative;
 }
+
+/* Start Design Page Specific Styles */
+#start-design {
+    min-height: calc(100vh - 200px);
+    padding: 120px 0 80px;
+}
+
+#start-design .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#start-design .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+#start-design .btn-lg {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+}
+
+/* Start Design Image Styles */
+.hero-image-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+/* Hero Section Styles */
+.hero-banner {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+    z-index: 2;
+}
+
+.hero-banner .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    animation: heroZoom 20s infinite alternate ease-in-out;
+    filter: grayscale(0.3) contrast(1.1);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: var(--primary-light);
+    padding: 0;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.hero-cta {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.hero-btn {
+    padding: 1.25rem 3.5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: transparent;
+    color: var(--primary-light);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-btn::before,
+.hero-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border: 2px solid var(--primary-light);
+    top: 0;
+    left: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-btn::before {
+    transform: translate(-4px, -4px);
+}
+
+.hero-btn::after {
+    transform: translate(4px, 4px);
+}
+
+.hero-btn:hover {
+    transform: translate(4px, 4px);
+    color: var(--primary-light);
+}
+
+.hero-btn:hover::before {
+    transform: translate(-8px, -8px);
+}
+
+.hero-btn:hover::after {
+    transform: translate(0, 0);
+}
+
+.hero-btn .btn-content {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.hero-btn .btn-content::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-light);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-btn:hover .btn-content::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Glowing effect */
+.hero-btn::before {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-btn:hover::before {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Magnetic effect */
+.hero-btn-wrapper {
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+}
+
+@media (hover: hover) {
+    .hero-btn-wrapper:hover .hero-btn {
+        transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) scale(1.05);
+    }
+}
+
+/* Button click effect */
+.hero-btn:active {
+    transform: translate(2px, 2px) scale(0.95);
+}
+
+.hero-btn:active::before {
+    transform: translate(-6px, -6px);
+}
+
+.hero-btn:active::after {
+    transform: translate(2px, 2px);
+}
+
+/* Secondary buttons (for options section) */
+.option-card .btn {
+    position: relative;
+    padding: 1rem 2.5rem;
+    background: var(--primary-dark);
+    border: none;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.option-card .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease-out, height 0.6s ease-out;
+}
+
+.option-card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.option-card .btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.option-card .btn:active {
+    transform: translateY(0);
+}
+
+@keyframes buttonPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes heroZoom {
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+    100% {
+        transform: scale(1.2) translate(-2%, -1%);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scrollIndicator {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Options Section Enhancement */
+#options {
+    position: relative;
+    background: #fff;
+    padding: 8rem 0;
+}
+
+#options::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom right, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
+}
+
+.option-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.option-card .card-body {
+    padding: 3rem;
+}
+
+.option-card h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.option-card .btn {
+    position: relative;
+    padding: 1rem 2.5rem;
+    background: var(--primary-dark);
+    border: none;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.option-card .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease-out, height 0.6s ease-out;
+}
+
+.option-card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.option-card .btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.option-card .btn:active {
+    transform: translateY(0);
+}
+
+@keyframes buttonPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-description {
+        font-size: 1.25rem;
+    }
+    
+    .hero-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+    }
+}
