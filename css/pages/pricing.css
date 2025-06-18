@@ -1,21 +1,27 @@
 /* Pricing Page Specific Styles */
 
+.pricing-section {
+    padding: 120px 0 80px;
+}
+
 .pricing-header {
+    margin-bottom: 60px;
     padding: 8rem 0 4rem;
     background: linear-gradient(135deg, var(--primary-dark), #222);
     color: var(--primary-light);
 }
 
 .pricing-card {
-    border: none;
+    padding: 40px;
+    margin-bottom: 30px;
     border-radius: 15px;
     transition: all 0.3s ease;
-    overflow: hidden;
+    border: 1px solid #eee;
 }
 
 .pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-card.featured {
@@ -27,39 +33,28 @@
     transform: scale(1.05) translateY(-10px);
 }
 
-.price-value {
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: var(--primary-dark);
+.price-amount {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 20px 0;
 }
 
 .price-period {
-    font-size: 1rem;
+    font-size: 16px;
     color: #666;
 }
 
 .feature-list {
-    margin: 2rem 0;
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
 }
 
 .feature-list li {
-    padding: 0.5rem 0;
-    color: #555;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.feature-list li.included {
-    color: var(--primary-dark);
-}
-
-.pricing-cta {
-    margin-top: 2rem;
-}
-
-.compare-features {
-    padding: 4rem 0;
-    background: #f8f9fa;
-}
-
-.feature-comparison {
-    margin-top: 3rem;
+.feature-list li:last-child {
+    border-bottom: none;
 }

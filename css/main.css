@@ -10,6 +10,18 @@ body {
     color: var(--primary-dark);
 }
 
+/* Add spacing for pages to prevent navbar overlap */
+.page-content {
+    padding-top: 100px;  /* This accounts for the fixed navbar height plus some breathing room */
+    min-height: calc(100vh - 100px); /* Ensures footer stays at bottom */
+}
+
+/* Ensure consistent top spacing for all main sections */
+.main-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
 /* Navbar Styles */
 .navbar {
     transition: all 0.3s ease;
