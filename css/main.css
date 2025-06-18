@@ -12,13 +12,12 @@ body {
 
 /* Add spacing for pages to prevent navbar overlap */
 .page-content {
-    padding-top: 100px;  /* This accounts for the fixed navbar height plus some breathing room */
-    min-height: calc(100vh - 100px); /* Ensures footer stays at bottom */
+    padding-top: 65px;  /* Further reduced for more compact layout */
+    min-height: calc(100vh - 65px); /* Adjusted to match new top padding */
 }
 
 /* Ensure consistent top spacing for all main sections */
-.main-section {
-    padding-top: 100px;
+.main-section {    padding-top: 65px;
     padding-bottom: 60px;
 }
 
