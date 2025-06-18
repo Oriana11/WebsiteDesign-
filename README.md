@@ -13,6 +13,13 @@ This project is a responsive, multi-page website for a fashion design service. I
 - **Typography:** Uses [Inter](https://fonts.google.com/specimen/Inter) for a modern, readable feel. Headings are bold and large, while body text is light and easy to scan.
 - **Visual Hierarchy:** Large hero banners, clear section headings, and card-based layouts guide users naturally through the content.
 
+- 
+## 📷 Screenshots
+![chrome_rw1WpQHidq](https://github.com/user-attachments/assets/5e4fd4c5-ef8b-4e6b-8f7c-e6fb91ceb674)
+![chrome_cOuhLGQ5LZ](https://github.com/user-attachments/assets/9ac354bd-1abb-460c-adbc-f2fc9573c97a)
+![chrome_kl0MSg7dX9](https://github.com/user-attachments/assets/80d56fc3-3d8c-4e02-9623-c352b9b23af8)
+![chrome_izCbBTUHSo](https://github.com/user-attachments/assets/56457ff8-7cd7-4a86-ac5d-b56f6d89e34b)
+
 ## 🖥️ UI & UX Choices
 
 - **Navigation:** A fixed, responsive navbar ensures easy access to all main sections. The "Start Design" link is visually emphasized to guide new users.
@@ -58,14 +65,6 @@ This project is a responsive, multi-page website for a fashion design service. I
 2. Open `index.html` or any page in your browser.
 3. All assets are local except for Bootstrap and Google Fonts (served via CDN).
 
-## 📷 Screenshots
-Pc size:
-![chrome_rw1WpQHidq](https://github.com/user-attachments/assets/5e4fd4c5-ef8b-4e6b-8f7c-e6fb91ceb674)
-![chrome_cOuhLGQ5LZ](https://github.com/user-attachments/assets/9ac354bd-1abb-460c-adbc-f2fc9573c97a)
-Tablet size:
-![chrome_kl0MSg7dX9](https://github.com/user-attachments/assets/80d56fc3-3d8c-4e02-9623-c352b9b23af8)
-Phone size:
-![chrome_izCbBTUHSo](https://github.com/user-attachments/assets/56457ff8-7cd7-4a86-ac5d-b56f6d89e34b)
 
 
 
